@@ -1,6 +1,6 @@
 package vue;
 
-import controler.ChessGameControler;
+import controler.ChessGameControlers;
 import model.Coord;
 
 
@@ -14,9 +14,9 @@ import model.Coord;
  */
 public class ChessGameCmdLine  {
 
-	ChessGameControler chessGameControler;
+	ChessGameControlers chessGameControler;
 
-	public   ChessGameCmdLine(ChessGameControler chessGameControler) {
+	public   ChessGameCmdLine(ChessGameControlers chessGameControler) {
 		this.chessGameControler = chessGameControler;
 	}
 

@@ -1,13 +1,14 @@
 package controler;
 
+import model.BoardGames;
 import model.ChessGame;
 import model.Coord;
 
 public class ChessGameControler implements ChessGameControlers {
 
-	public ChessGame chessGame;
+	public BoardGames chessGame;
 	
-	public ChessGameControler(ChessGame chessGame) {
+	public ChessGameControler(BoardGames chessGame) {
 		this.chessGame = chessGame;
 	}
 	
