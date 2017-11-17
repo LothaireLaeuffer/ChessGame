@@ -13,10 +13,21 @@ public abstract class AbstractPiece implements Pieces {
 
 	private int x, y;
 	private Couleur couleur;
-	
+	private String name;
 
 	/**
 	 * @param name
+	 * @param couleur
+	 * @param coord
+	 */
+	public AbstractPiece(String name, Couleur couleur, Coord coord){
+		this.x = coord.x;
+		this.y = coord.y;
+		this.couleur=couleur;
+		this.name=name;
+	}
+	
+	/**
 	 * @param couleur
 	 * @param coord
 	 */
