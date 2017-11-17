@@ -1,7 +1,7 @@
 package vue;
 
+import controler.ChessGameControler;
 import model.Coord;
-import controler.controlerLocal.ChessGameControler;
 
 
 
