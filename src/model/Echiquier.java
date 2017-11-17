@@ -59,6 +59,17 @@ public class Echiquier implements BoardGames {
 			this.jeuOppose = this.jeuNoir;
 		}
 	}
+	
+	/**
+	 * @return une liste de PieceIHM
+	 * qui pourra être exploitée par une IHM
+	 */
+	public List<PieceIHM> getPiecesIHM(){
+		List<PieceIHM> list = new LinkedList<PieceIHM>();
+		list.addAll(this.jeuBlanc.getPiecesIHM());
+		list.addAll(this.jeuNoir.getPiecesIHM());
+		return list;
+	}
 
 
 	/**
